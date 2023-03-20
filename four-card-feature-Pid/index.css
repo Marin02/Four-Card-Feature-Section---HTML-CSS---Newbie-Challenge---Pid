@@ -1,0 +1,259 @@
+/* Font Family Poppins
+Font Weight 200,400,600 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* Variable Colors And General Font */
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --fontPoppins: 'Poppins', sans-serif;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontPoppins);
+    font-family: 15px;
+}
+
+body {
+    background-color: var(--veryLightGray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styles */
+.main-container {
+    height: 1157px;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+/* Description Styles */
+.general-description {
+    height: 200px;
+    width: 300px;
+    display: block;
+}
+
+.general__title {
+    margin-bottom: 1em;
+}
+
+.general__title > span {
+    color: var(--veryDarkBlue);
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.general__title > span > h1 {
+    color: black;
+    font-size: 21px;
+    letter-spacing: 1.8px;
+}
+
+.general__dates {
+    color: var(--veryDarkBlue);
+    font-size: 15.3px;
+    font-weight: 200;
+    text-align: start;
+}
+
+/* Supervisor Card Styles #1 */
+.supervisor-card {
+    background-color: white;
+    height: 220px;
+    width: 300px;
+    padding: 20px;
+    display: block;
+    position: absolute;
+    top: 12.8em;
+    left: 0;
+    border-top: .3em solid var(--cyan);
+    border-radius: .5em;
+    box-shadow: 1px 3px 10px var(--grayishBlue);
+}
+
+.supervisor__description {
+    font-size: 14px;
+    color: var(--grayishBlue);
+    margin-top: .3em;
+}
+
+.supervisor__image {
+    margin-left: 11.7em;
+    margin-top: 2em;
+}
+
+/* Team Builder Card Styles #2 */
+.team-builder__card {
+    background-color: white;
+    height: 220px;
+    width: 300px;
+    padding: 20px;
+    display: block;
+    position: absolute;
+    top: 28em;
+    left: 0;
+    border-top: .3em solid var(--red);
+    border-radius: .5em;
+    box-shadow: 1px 3px 10px var(--grayishBlue);
+}
+
+.team-builder__description {
+    color: var(--grayishBlue);
+    font-size: 14px;
+    margin-top: .3em;
+}
+
+.team-builder__image {
+    margin-left: 11.6em;
+    margin-top: 2em;
+}
+
+/* Karma Card Styles #3 */
+.karma-card {
+    background-color: white;
+    height: 220px;
+    width: 300px;
+    padding: 20px;
+    display: block;
+    position: absolute;
+    top: 43.2em;
+    left: 0;
+    border-top: .3em solid var(--orange);
+    border-radius: .5em;
+    box-shadow: 1px 3px 10px var(--grayishBlue);
+}
+
+.karma__description {
+    color: var(--grayishBlue);
+    font-size: 14px;
+    margin-top: .3em;
+}
+
+.karma__image {
+    margin-left: 11.6em;
+    margin-top: 2em;
+}
+
+/* Calculator Card Styles #4 */
+.calculator-card {
+    background-color: white;
+    height: 220px;
+    width: 300px;
+    padding: 20px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: .3em solid var(--blue);
+    border-radius: .5em;
+    box-shadow: 1px 3px 10px var(--grayishBlue);
+}
+
+.calculator__description {
+    color: var(--grayishBlue);
+    font-size: 14px;
+    margin-top: .3em;
+}
+
+.calculator__image {
+    margin-left: 11.6em;
+    margin-top: 2em;
+}
+
+/* Media Queries Desktop Design (min-width: 1000px) */
+@media (min-width: 1124px) {
+    body {
+        background-color: var(--veryLightGray);
+    }
+
+    .main-container {
+        height: 630px;
+        width: 1100px;
+        display: flex;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    .general-description {
+        height: 140px;
+        width: 500px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .general__title {
+        margin-top: .5em;
+    }
+
+    .general__dates {
+        margin-top: -.5em;
+        text-align: center;
+    }
+
+    .supervisor-card {
+        height: 230px;
+        width: 350px;
+        left: 0;
+        top: 17em;
+    }
+
+    .supervisor__image {
+        margin-left: 14.5em;
+    }
+
+    .team-builder__card {
+        height: 230px;
+        width: 350px;
+        top: 9.2em;
+        left: 23.4em;
+    }
+
+    .team-builder__image {
+        margin-left: 14.5em;
+    }
+
+    .karma-card {
+        height: 230px;
+        width: 350px;
+        top: 24.9em;
+        left: 23.4em;
+    }
+
+    .karma__image {
+        margin-left: 14.5em;
+    }
+
+    .calculator-card {
+        height: 230px;
+        width: 350px;
+        bottom: 7em;
+        left: 46.7em;
+    }
+
+    .calculator__image {
+        margin-left: 14.5em;
+    }
+
+}
+@media (min-height: 800px) {
+    .main-container {
+        margin-top: 5em;
+    }
+}
